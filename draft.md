@@ -1,0 +1,574 @@
+
+
+### 2
+它们的并集U是开集
+若U非开区间，则$\exists I_{a},I_{b}\in U,$使得无U中的路径将其连通
+
+### 3，
+闭集可表示为开集的可数交
+ 闭集F的邻域$U_n=\left\{x\in\mathbb{R}:d(x,F)<\frac1n\right\}$，其中距离 $d(x,F)=\inf\{|x-y|:y\in F\}$
+   $n\to\infty$,$d(x,F)\to 0$,$x\in F$,则 $\bigcap_{n=1}^\infty U_n=F$
+利用De Morgan定律，开集是可数个闭集的并集
+### 4 
+开集 + 任意集 = 开集
+利用某种线性
+$\forall x\in A,$$\exists \delta>0,B(x,\delta)\subset A$，
+$\forall y\in B,z\in B(x+y,\delta),$$z-x-y<\delta$
+$z-y\in B(x,\delta )\subset A$
+$B(x+y,\delta)\subset A+B$
+由z的任意性，A+B是开集
+闭集 + 闭集 不一定 闭集，但一定是可数个闭集的并：
+闭集+有界闭集是闭集
+ $B_n=B\cap\overline{B(0,1/n)}$, $B=\bigcup_{n=1}^\infty B_n$,
+  $A+B=\bigcup_{n=1}^\infty(A+B_n)$
+### 5 闭区间内不含数字 6 的十进制数集是完全集
+Cantor 集是三进制中不含数字 1 的数集，换
+有限小数 $x_n\to x$，若x某位为6，则 $(x-\delta,x+\delta)$中所有$x_{n}$该位均为6，矛盾，则闭
+ 十进制展开$x=0.a_1a_2\cdots a_k\cdots$，$\forall \epsilon,$ 取$10^{-N}<\varepsilon$,， $x_n=0.a_1\cdots a_Nb_{N+1}b_{N+2}\cdots$，  $\forall b_i\neq6,$且$b_{N+1}\neq a_{N+1}\text{,}$x不孤立
+### 6，
+如凸函数、指示函数
+必要性：
+函数极限直接蕴含序列；
+$\forall \epsilon>0,\exists \delta>0,$ $\inf_{\begin{array}{c}y\in E\\0<|y-x|<\delta\end{array}}f(y)>f(x)-\varepsilon$,相应条件下$f(x)-\epsilon\le f(y)$
+充分性
+a)若 $f(x)>\underline{\lim}_{y\to x}f(y)$，$\exists \epsilon>0,$取$\delta_{n}=\frac{1}{n}$, $0<|y_{n}-x|<\delta_{n}\text{ 且 }f(y)<f(x)-\varepsilon$
+ $\underline{\lim}_{n\to\infty}f(y_n)\leq f(x)-\varepsilon$矛盾
+ b) $\inf_{\begin{array}{c}y\in E\\0<|y-x|<\delta\end{array}}f(y)\geq f(x)-\varepsilon$
+ 
+
+### 7，
+孤立点存在互不相交的开邻域，取有理数逼近，则基数不大于有理数集的
+
+### 8，
+开集基数为c
+开集为有理点为心、有理半径的开球的并，总数 ≤ 基的子集数=c
+  包含$a\in\mathbb{R}$，$(a,\infty)\times\mathbb{R}^{k-1}$的基数同$\mathbb{R}$，
+  闭集基数为c：补映射是双射，
+   $G_{\delta}\text{ 型集}$：由开集的序列得到，基数不大于 $(2^{\aleph_0})^{\aleph_0}=2^{\aleph_0\cdot\aleph_0}=2^{\aleph_0}$
+  且单点集基数为c
+   $F_{\sigma}$型：同 $G_{\delta}\text{ 型集}$，含 $[a,a+1]$即可
+### 13，
+#### a
+关于n 单调递减：
+向外拉图像
+ $f_n(x)=\begin{cases}0,&x<a-\frac1n\\n(x-(a-\frac1n)),&a-\frac1n\leq x<a\\1,&a\leq x\leq b\\1-n(x-b),&b<x\leq b+\frac1n\\0,&x>b+\frac1n\end{cases}$
+ 
+### c
+捏一捏图像，再像喷泉一样逼近
+$f_n(x)=\begin{cases}0,&x\leq a\\n(x-a),&a<x\leq a+\frac1n\\1,&a+\frac1n<x<b-\frac1n\\n(b-x),&b-\frac1n\leq x<b\\0,&x\geq b\end{cases}$
+
+ $S(t)=0(\forall t\leq0)\:,\quad S(t)=1(\forall t\geq1)$
+#### d
+开集是可数个闭集的并，逼近开集特征函数，常用单调递增列从内部生长，
+单调光滑平缓函数 $h(t)=\begin{cases}e^{-1/t}&t>0\\0&t\leq0\end{cases}$
+光滑阶跃函数 $S(t)=\frac{h(t)}{h(t)+h(1-t)}$
+ 两个相应非负单调递增序列的乘积 $f_n(x)=S(n(x-a))\cdot S(n(b-x))$
+#### b
+捏得很大很胖，然后慢慢收紧肚子，还是不够，先要略高于1
+  $f_n(x)=\left(1+\frac1n\right)S\left(n\left(x-a+\frac1n\right)\right)S\left(n\left(b+\frac1n-x\right)\right)$
+ 
+
+### 14，
+
+三进制 $\frac{1}{4}=0.020202\ldots$;  
+$1/13=0.002002...$
+
+### 15，
+任意邻域一定会在某一步起被挖掉一些
+### 16，
+三进制 $1/3=0.0222\ldots$对应二进制 0.0111…= 1/2，按定义右连续
+$\forall \epsilon>0,$$\frac{1}{2}-\epsilon$有二进制表示，对应回三进制$\frac{1}{3}-\delta$,且CL函数单调不减，则左连续
+子列$x_{n}\frac{1}{3}-\frac{1}{3^{n}}\to \frac{1}{3}$，$\frac{\Phi(x_{n})-\Phi\left( \frac{1}{3} \right)}{x_{n}-\frac{1}{3}}=$ $\left(\frac32\right)^n\to \infty$，而右导数为0，则不可导
+
+### 17，
+ 1)被移除$\large\sum_{n=1}^\infty2^{n-1}\cdot\frac\alpha{3^n}=\alpha$
+2)与题15一致
+
+### 18（ii）
+每个子集都可以取斜率为2的单调函数，然后在左右分别接……但是间断点不会太多
+单调函数由其值在有理点几乎完全决定（如无理数点取值为左侧有理点的上确界， 此外处理至多可数个跳跃点）
+ 基数$\le\mathfrak{c}^{\aleph_0}=(2^{\aleph_0})^{\aleph_0}=2^{\aleph_0\cdot\aleph_0}=2^{\aleph_0}=\mathfrak{c}$
+ 且取$\forall k\in \mathbb{R},f_k(x)=x+k$，有c个
+
+## 1.3
+### 1
+我知道，$B(R)$由开集生成，为$\sigma$-代数，对补和可数并封闭
+闭集是开集的补集，单点集满足 $\large\{x\}^c=(-\infty,x)\cup(x,+\infty)$，属于闭集
+有理点为单点集的可数并，无理点为$\mathbb{Q}$的补集
+### 4
+i)
+ $\mathbb{R}\text{的开集}\text{是}\overline{\mathbb{R}}\text{的开集}$，则 $\mathfrak{B}_\mathbb{R}\subset\mathfrak{B}_{\overline{\mathbb{R}}}$
+  $\mathbb{\bar{R}}$中序拓扑开集基为$(a,b)$, $(a,+\infty]$， $[-\infty,b)$
+  $\{+\infty\}=\bigcap_{n\in\mathbb{N}}(n,+\infty]\in\mathfrak{B}_{\overline{\mathbb{R}}},$同理 $\{-\infty\}\in\mathfrak{B}_{\overline{\mathbb{R}}}$，
+  则F={B,B∪{+∞},B∪{−∞},B∪{+∞,−∞} ​|B$\in \mathfrak{B}_{\mathbb{R}}$}$\subset$$\mathfrak{B}_{\overline{\mathbb{R}}}$,且F含$\mathbb{\bar{R}}$中所有开集
+ F含$\mathbb{\bar{R}}$,补集封闭，
+   $\forall E_n\in\mathcal{F},$$E_n=B_n\cup S_n,\quad S_n\subseteq\{\pm\infty\},\mathrm{~}B_n\in\mathfrak{B}_\mathbb{R}$，则 可数并封闭，F为σ-代数
+   则 $\mathfrak{B}_{\overline{\mathbb{R}}}=\left\{B,\:B\cup\{+\infty\},\:B\cup\{-\infty\},\:B\cup\{+\infty,-\infty\}\mid B\in\mathfrak{B}_{\mathbb{R}}\right\}$，(1)
+ $E\setminus\{+\infty,-\infty\}\in\mathfrak{B}_\mathbb{R}$
+  这样就轻松了
+  ii)
+$[-\infty,a]$的补集为开集，$(-\infty,a]=[-\infty,a]\cap\mathbb{R}$， $[a,+\infty]=([-\infty,a))^c$， $(a,+\infty]=([-\infty,a])^c$，则 $|\sigma(\mathcal{F}_i)\subset\mathfrak{B}_{\overline{\mathbb{R}}}$
+  对 $\mathcal{F}_{1}=\{[-\infty,a]\mid a\in\mathbb{Q}\}$，
+   $\forall b\in\mathbb{R}$,$\exists \{q_{n}\}\subset \mathbb{Q}$​单调递减趋于b, $[-\infty,b]=\bigcap_{n=1}^\infty[-\infty,q_n]$ $\in\sigma(\mathcal{F}_1)$,
+开集基$[-\infty,c)=\bigcup_{n=1}^\infty[-\infty,c-1/n]$ $\in\sigma(\mathcal{F}_1)$
+ $(b,+\infty]=([-\infty,b])^c$， $(c,b)=[-\infty,b)\cap(c,+\infty]$ $\in\sigma(\mathcal{F}_1)$，则 $\mathcal{B}_{\overline{\mathbb{R}}}\subset\sigma(\mathcal{F}_1),$
+  而$\bigcup_{n\in \mathbb{N}}\left[ a+\frac{1}{n},+\infty \right]=(a,+\infty]$,$(a,+\infty]^{c}=$ $[-\infty,a]$;$\bigcup_{n\in \mathbb{N}}(-n,a]=[-\infty,a]$，则其余三个生成的σ-代数含$\sigma(F_{1})$，四者都等于$\mathcal{B}_{\overline{\mathbb{R}}}$
+  
+### 5
+F为使得某个函数的函数值大于某个实数的自变量范围，衡量了这族函数能测量的事件，用逆表示为 $F=\{f_\lambda^{-1}((c,\infty))\mid\lambda\in\Lambda,\:c\in\mathbb{R}\}$
+#### a
+$f^{-1}(c,+\infty)$=$\varnothing,\mathbb{R+},$ $[0,+\infty)$,$\mathbb{R}$,生成 $\begin{aligned}&\sigma(\mathrm{sign})=\\&\{\emptyset,\:\mathbb{R},\:(-\infty,0),\:\{0\},\:(0,+\infty),\:(-\infty,0],\:[0,+\infty),\:\mathbb{R}\setminus\{0\}\}\end{aligned}$，且满足补封闭、可数并封闭
+#### b
+$[n,\infty)$，补集为$(-\infty,n)$，生成 $\{\bigcup_{n\in S}[n,n+1)\mid S\subseteq\mathbb{Z}\}$，可数并封闭，且 $A^c=\bigcup_{n\in\mathbb{Z}\setminus S}[n,n+1)$，补封闭
+
+### 6b
+交、差封闭可能是不思进取的自嗨， 但是
+$A\Delta B=\left( A\bigcup B \right)/\left( A\bigcap B \right)$
+$A\cup B=(A\triangle B)\triangle(A\cap B)$，
+在对交、差封闭的条件下，对对称差封闭$\Leftrightarrow$对并封闭
+### 11
+F生成的σ-环是飘渺的，空虚的，依靠更大的集类 G！
+ $\mathcal{G}=\left\{A\subset X\mid\exists\{E_n\}_{n=1}^\infty\subset\mathcal{F},\:A\subset\bigcup_{n=1}^\infty E_n\right\}.$对$E\in F$取 $E_n=E$则 $\mathcal{F}\subset\mathcal{A}$
+取同一列$E_{n}$，就得到对差封闭；
+对 $E_{i}\subset\bigcup_{n=1}^\infty E_{i,n}$,$\bigcup E_{i}\subset \bigcup_{i}\bigcup_{n}E_{i,n}$，对可列并封闭
+则G 是包含 F 的 σ- 环，S(F)满足G的性质
+
+## 1.3
+
+### 12
+$\mathcal{A}\subset \mathcal{F}$,则$\mathcal{A}\subset S(\mathcal{F})$,$S(\mathcal{A})$的 #最值 性：$S(\mathcal{A})\subset S(\mathcal{F})$
+任意多个$S(\mathcal{A})$的并集中的每个 #元素 （子集）必然在某个$S(\mathcal{A})$ 中,$\mathcal{G=}\bigcup S(\mathcal{A})\subset S(\mathcal{F})$；且,$S(\mathcal{A})$对关于 #全集 的 #补集 #封闭 ，则$\mathcal{G}$ #包含 全集且对补集封闭（先包含全集，补集运算就没有发生扩充）
+$\forall$ 元素$F\in\mathcal{F}$ #存在$\mathcal{A}$包含{F} 则$\mathcal{F}=\bigcup \mathcal{A}$,则$\mathcal{F}\subset \mathcal{G}$
+$\forall\{E_n\}_{n=1}^\infty \subseteq \mathcal{G}$，每个 $E_{n}$存在 $S(\mathcal{A}_n)$含$E_{n}$， #并集$\mathcal{A}=\bigcup\mathcal{A}_n$ ，子集的并仍是子集，而可数个可数集的并仍可数，故 $\mathcal{A} \in \mathcal{E}$，于是 $\bigcup_{n=1}^\infty E_n \in S(\mathcal{A}) \subseteq \mathcal{G}$。
+$\mathcal{G}$为含F的 σ-代数，则$\mathcal{G}\subset S(\mathcal{F})$
+综上取等
+### 13
+任取集族F的有限子集$E_{1},\dots,E_{k}$， #差集 $F/\bigcup E_{n}$非空，进而得到与$E_{1},\dots,E_{k}$不交的$E_{k+1}$，从k=1 #递推 即可
+#### $\overline{\mathcal{F}}\geqslant\mathfrak{c}.$
+$E_{k}$之间的 #并集 两两不同，有$2^{\aleph_{0}}=\mathfrak{c}$个
+## 2.1
+### 2
+有限子集求和的上确界$ν(E)=sup${$\sum_{i\in F}\mu_{i}(E)|F\subset J，F有限$}
+设$E=\bigsqcup_{n=1}^{\infty}E_{n}$
+非负级数$\sum_{i\in F}\mu_i(E)=\sum_{i\in F}\left[\sum_{n=1}^\infty\mu_i(E_n)\right]$=$\sum_{n=1}^\infty\left[\sum_{i\in F}\mu_i(E_n)\right].$$\leq\sum_{n=1}^\infty\nu(E_n).$
+两边取 #上确界 ，$\nu(E)\leq\sum_{n=1}^\infty\nu(E_n)$
+取 #有限 子集$F_{n}\subset J$使得$\sum_{i\in F_n}\mu_i(E_n)\geq\nu(E_n)-\frac\varepsilon N.$，(某$ν(E_{n}​)=∞$时平凡)
+取$F:=\bigcup_{n=1}^NF_n$则$\sum_{n=1}^N\nu(E_n)\leq{\nu(E)+\varepsilon.}$
+$\varepsilon\to 0,N\to\infty$,$\sum_{n=1}^\infty\nu(E_n)\leq{\nu(E).}$
+
+### 7
+取 $g(x) = \mu((0,x])$（$x\ge 0$）和 $g(x)=-\mu((x,0])$（$x<0$），则 $g$ 单调增
+$E_n=\left(x,x+\frac1n\right],$$\mu(E_n)\to\mu(\emptyset)=0$，$g(x+h)-g(x)\to0$，g右连续，且 $\mu((a,b])=g(b)-g(a)$。  
+只依赖于 $g$ 的差值。若 $h$ 也满足，则 $h=g+C$。
+Radon 测度与右连续单调递增函数（相差常数意义下）一一对应；如果选择 $[a,b)$，则会得到左连续函数。  
+
+**(ii)**  
+离散点对应分布函数的跳跃
+$\mu(\{x\})$$=\lim_{h\to0^+}\mu((x-h,x])$
+对单调右连续 $g$， $g \text{ 在 } x \text{ 连续}$$\iff 0=g(x)-g(x^-)=\mu(\{x\})$
+### 8
+$\varnothing \in \mathcal{N}$（测度定义）。  
+差封闭：$A, B \in \mathcal{N} \implies A \setminus B \subseteq A \implies \mu(A \setminus B) \le \mu(A) = 0$。  
+可数并封闭：$\mu(\bigcup A_n) \le \sum \mu(A_n) = 0$。  
+$\varnothing \in \mathcal{F}$。  
+差封闭：$A \setminus B \subseteq A \implies \mu(A \setminus B) \le \mu(A) < \infty$。  
+有限并封闭：$\mu(A \cup B) \le \mu(A) + \mu(B) < \infty$。 
+反例：取$X = \mathbb{N}$，$\mathcal{R} = 2^{\mathbb{N}}$，$\mu$为计数测度。  
+常常先在有限测度集$\mathcal{F}$上定义积分，再通过极限扩张
+则$\mathcal{F} = \{ E \subset \mathbb{N} : E \text{ 有限} \}$。  
+取$A_n = \{n\}$，每个$A_n$有限（测度 1），但$\bigcup_n A_n = \mathbb{N}$是无限集，测度无穷，不在$\mathcal{F}$中。  
+### 11
+$U=\bigcup_{i=1}^nI_i$，为有限个开区间的并，若$x\in[0,1]\not \in \overline{U}$,则存在$(x-\varepsilon,x+\varepsilon)\bigcap \overline U=\varnothing$，由于有理数在$\mathbb{R}$稠密，矛盾，则$[0,1]\subset\overline U$
+而$\overline U$至多比U多有限个点，则$\sum m(I_{i})\ge m(U)=m(\overline U)=1$
+
+### 12
+x的n级集前 n 个坐标与 x 完全相同，后续坐标任意;不同x的n 级集两两不交,构成划分；n级集数量有限
+$R_n=\{\bigcup_{a}[a]_n\mid$ $a=(a_1,a_2,\ldots,a_n)\mid a_i=\frac{j_i}{i^2},\:j_i=0,1,\ldots,i^2,\:i=1,2,\ldots,n\}$为σ-环
+$E\in R_n$，$E=\bigcup_{a\in B}[a]_n$，$\mu_{n}(E)=\sum_{a\in B}\prod_{i=1}^n\frac1{1+i^2}$
+#### b
+对同一a，$[a]_{n}$固定了前n个坐标，则$[a]_{n}\subset[a]_{n+1}$,进而$R_{n}\subset R_{n+1}$
+$E\in R_n,F\in R_{m}$,$E\bigcup F\in R_{\max(n,m)}\in R$有限并封闭，且$R_{max(n,,)}$为σ-环，对差封闭
+则R对差封闭；$R_1\subseteq R$，非空
+#### c
+每个m级集的测度$\prod_{i=1}^m\frac1{1+i^2}$
+$\mu_m([a]_n)=$$\sum_{a_{n+1},\ldots,a_m}\mu_m\left(\left[\left(a_1,\ldots,a_m\right)\right]_m\right)$$=\left(\prod_{i=n+1}^m(i^2+1)\right)\cdot\left(\prod_{i=1}^m\frac1{1+i^2}\right)$$=\prod_{i=1}^n\frac1{1+i^2}=\mu_n([a]_n)$
+再由n 级集两两不交，$\mu_m(E)=\sum_{a\in B}\mu_m([a]_n)=\sum_{a\in B}\mu_n([a]_n)=\mu_n(E)$
+
+#### d
+有限加时存在$n=\max\{n_i\mid E_i\in R_{n_i}\}$压制每个，$\mu\left(\bigcup_{i=1}^kE_i\right)=\mu_n\left(\bigcup_{i=1}^kE_i\right)=\sum_{i=1}^k\mu_n(E_i)$=$\sum_{i=1}^k\mu(E_i)$有限可加
+$A_j=\{x:x_1=\cdots=x_{j-1}=0,x_j=1/j^2\}$对可数并不封闭
+
+即使有限维测度相容，扩充到无限维也不一定自然得到可数可加的测度
+
+[[实变作业]]
+
+## 2.2
+### 12
+对前n位做覆盖，$[0.x_{1}x_{2}\dots x_{n}00\dots,0.x_{1}x_{2}\dots (x_{n}+1)](x_{n}=9时进位)$，总长度$L_{n}=\frac{9^{n}}{10^{n}}\to 0$，则$0\le m^{*}(E)\le L_{n}$使得$m^{*}(E)=0$，
+任意测试集A，$m^{*}(A)\le m^{*}(A\cap E)+m^{*}(A\cap E^{c})\le 0+m^{*}(A)$，则取等，E可测，$m(E)=m^{*}(E)=0$
+### 13
+不一定Lebesgue测度；$\bigcup_{x\in \mathbb{Q}}(x-r_{x},x+r_{x})$,可能无限逼近但始终不覆盖无理点；
+但$(x-r_{x},x+r_{x})$可以缩小为$I_{x}=(x-p_{x},x+q_{x})$使得端点为有理数，则{$I_{x}$}可数，可取可数子覆盖$\bigcup_{n=1}^\infty I_{x_n}$，$m^{*}(E)\le \sum m^{*}(I_{x_{n}})=0$；
+或由$\mathbb{R}$任意开集均可表示为有理数为端点的开区间的并，第二可数
+或可数划分成紧集再加
+### 14
+假设$\forall I,m^{*}(E\cap I)< \alpha m^{*}(I)$
+同上题，E的任意区间覆盖存在可数子覆盖$I_{n}$,则$m^{*}(E)=m^{*}\bigcup\left( E\cap I_{n} \right)\le \sum m^{*}(E\cap I_{n})<\alpha \sum m^{*}(I_{n})$
+由于任意$\varepsilon$>0存在$\sum m^{*}(I_{n})\le m^{*}(E)+\varepsilon$,则$m^{*}(E)\le \alpha m^{*}(E)$，与$m^{*}(E)>0$矛盾
+将上述覆盖改为开区间覆盖，不影响
+### 15
+Lebesgue测度基于长度，在等距变换下不变，取Right triangle$T=\{(x,y)\mid x\geq0,y\geq0,\frac xa+\frac yb\leq1\}$，划分$x_k=\frac{ka}n.$，闭Rectangle $R_{k}=[x_{k-1},x_{k}]\times[0,b(1-\frac{x_{k-1}}{a})].$，$R_k^{\prime}=[x_{k-1},x_k]\times[0,b(1-\frac{x_k}a)]$，由测度单调，$\frac{ab}n\cdot\frac{n-1}2\le$$m(T)\leq\frac{ab}n\cdot\frac{n+1}2$，上述步骤$T$换成$T^{o}$也成立，则令$n\to \infty,$得$m(T^{\circ})=m(T)=\frac{ab}2.$
+
+对三角形平移至$A^{\prime}(0,0),B^{\prime}(x_2-x_1,y_2-y_1),C^{\prime}(x_3-x_1,y_3-y_1)$，表示为仿射变换$\begin{pmatrix}B' , C'\end{pmatrix}=A\begin{pmatrix}1 &  \\  & 1\end{pmatrix}$,长度$|A\vec{x}|=|\det A||\vec{x}|$，则$m(ABC)=$$\frac12\left|(x_2-x_1)(y_3-y_1)-(x_3-x_1)(y_2-y_1)\right|$
+
+
+## 2.3
+
+### 4
+对Lebesgue-Stieltjes测度
+{$\mathbb{B}=(a^{\prime},b]$|$a\le b$}为半环，$\mu_0((a,b]){=}g(b){-}g(a)$满足非负且有限可加，对不交并${(a,b]}$=$\bigcup(a_i,b_i]$
+，任意$\varepsilon>0,$用右连续取$g(c^{\prime})-g(c)<\varepsilon$，$g(d_n^{\prime})-g(d_n)<\varepsilon/2^n$，对[c',d]的开覆盖$\{(c_n,d_n^{\prime})\}_{n=1}^{\infty}$取有限子覆盖，则$g(d)-g(c^{\prime})\leq\sum_{n=1}^N[g(d_n^{\prime})-g(c_n)]<\sum_{n=1}^\infty[g(d_n)-g(c_n)]+\varepsilon.$，则$\sum_{i=1}^\infty\mu_0((a_i,b_i]){=}\mu_0((a,b])$，为$\mathbb{B}$上测度，Carathéodory延拓为$\mathcal{B}_{[a,b]}$上测度
+假设不唯一，$\mu_1(c,d])-\mu_{2}((c,d])=0$，在$\mathbb{B}$上相等，由于$\mathbb{B}$生成$\mathcal{B}_{[a,b]}.$，则在$\mathcal{B}_{[a,b]}.$上相等
+### 7
+若不稠密，存在某个开区间 (a,b)⊂R，使得 (a,b)∩(R∖E)=∅，即 (a,b)⊂E。
+但 Lebesgue 测度 $m((a,b))=b−a>0$。而 E 是零测集，零测集的任何子集都是零测集，因此 m((a,b))≤m(E)=0，矛盾。
+
+### 8
+任意测试集T，$\forall  \varepsilon>0$,存在n，
+$m^{*}(T)=m^{*}(A_{n}\cap T)+m^{*}(A_{n}^{C}\cap T)\le m^{*}(A_{n}\cap T)+m^{*}(B_{n}^{C}\cap T)+\varepsilon$$\le m^{*}(E\cap T)+m^{*}(E^{C}\cap T)+\varepsilon\le m^{*}(B_{n}\cap T)+m^{*}(A_{n}^{C}\cap T)+\varepsilon\le m^{*}(B_{n}\cap T)+m^{*}(B_{n}^{C}\cap T)=m^{*}(T)$,则$m^{*}(E\cap T)+m^{*}(E^{C}\cap T)=m^{*}(T)$
+
+
+
+
+[[实变作业]]
+
+### 5
+#### 2.3.6‘
+
+$\begin{aligned}&(1)\quad&\forall\varepsilon>0\text{,存在开集 }U\supseteq E\text{ 使得 }\mu_g^*(U\setminus E)<\varepsilon\\\\&(2)\quad&\text{存在 }G_\delta\text{ 型集 }G\supseteq E\text{ 使得 }\mu_g^*(G\setminus E)=0\\\\&(3)\quad&\forall\varepsilon>0\text{，存在闭集 }F\subseteq E\text{ 使得 }\mu_g^*(E\setminus F)<\varepsilon\\\\&(4)\quad&\text{存在 }F_\sigma\text{ 型集 }F\subseteq E\text{ 使得 }\mu_g^*(E\setminus F)=0\\\\&\text{(5)}\quad&E\text{ 是 }\mu_g\text{ 可测集 (即满足 Caratheodory 条件)}\end{aligned}$
+$E\subseteq\bigcup_{n=1}^\infty(a_n,b_n],\quad\sum_{n=1}^\infty[g(b_n)-g(a_n)]<\mu_g^*(E)+\frac\varepsilon2$
+利用右连续$I_n^{\prime}=(a_n,b_n+\delta_n)$，$\ell_g(I_n^{\prime})<[g(b_n)-g(a_n)]+\frac\varepsilon{2^{n+1}}$
+$\mu_g(U)\leq\sum_{n=1}^\infty\ell_g(I_n^{\prime})$$<\mu_g(E)+\varepsilon$
+5推1
+对上式由可测，$m^{*}(U\setminus E)+m(E)<m(E)+\varepsilon.$
+1推2
+$G=\bigcap_{n=1}^\infty U_n$,$\mu_g^*(U_n\setminus E)<\frac1n$,$\mu_g^*(G\setminus E)\leq \frac{1}{n}$
+$n\to\infty\text{,得 }\mu_g^*(G\setminus E)=0$
+2推5
+$E=G \setminus N$,N零外测度
+$\mu_a^*(A\cap N)+\mu_a^*(A\cap N^c)\leq\mu_g^*(N)+\mu_g^*(A)=\mu_g^*(A)$，N可测
+E为两个可测集的差，故可测
+1等价3
+任意$E^{c}\subset \mathbb{R,}$存在开集$V\supseteq E^c$，$\mu_g(V\cap E)$=$\mu_g(V\setminus E^c)<\varepsilon$，$\Leftrightarrow$存在闭集$V^{c}\subset E$，$\mu_g(V^{c})\geq\mu_g(E)-\varepsilon$
+
+2等价4
+存在$G_{\delta}$集$V\supseteq E^c$，$\mu_g(V\cap E)$=$\mu_g(V\setminus E^c)<\varepsilon$$\Leftrightarrow$存在$F_{\sigma}$集$V^{c}\subset E$，$\mu_g(V^{c})\geq\mu_g(E)-\varepsilon$
+
+#### 2.3.9’
+$\mu_g(E)=\inf\{\mu_g(U):E\subseteq U,U\text{ 为开集}\}$=$\sup\{\mu_g(K):E\supseteq K,K\text{ 为紧集}\}$
+澄明：
+由上题1），$\mu_{g}(U_{n})<\mu_g(E)+\frac{1}{n}$,取下确界，$\inf\{\mu_g(U):E\subseteq U,U\text{ 为开集}\}\le inf\ \mu_{g}(U_{n})\le \mu_{g}(E)$
+又$E\subset U,$综合起来$\mu_g(E)=\inf\{\mu_g(U):E\subseteq U,U\text{ 为开集}\}$，同理由上题3），$\mu_{g}(E)$$=\operatorname*{sup}\{\mu_{g}(K):E\supseteq K,K\text{ 为紧集}\}$
+#### 2.3.10’
+$\text{设 }E\text{ 为 }\mu_g\text{ -可测集，}\mu_g(E)<+\infty\text{。则 }\forall\varepsilon>0\text{，存在有限}\\\text{个两两不交的半开区间 }(a_1，b_1],\cdots,(a_n,b_n]\text{ 使得:}$
+$\mu_g\left(E\triangle\bigsqcup_{i=1}^n(a_i,b_i]\right)<\varepsilon$
+呈现：
+存在开集 U⊇E  使得$\mu_g(U\setminus E)<\frac\varepsilon2$，又开集$U=\bigsqcup_{k=1}^\infty(c_k,d_k)$测度有限，取$\sum_{k=N+1}^\infty\mu_g((c_k,d_k))<\frac\varepsilon4$；利用右连续，取$\mu_g((c_k,d_k-\delta_k])>\mu_g((c_k,d_k))-\frac\varepsilon{2^{k+2}}$
+综合，$V=\bigsqcup_{k=1}^N$$(c_k,d_k-\delta_k]$，
+$\mu_g(E\setminus V)\leq\mu_g(U\setminus V)$=$\sum_{k=1}^{N}\mu_{g}\left((c_{k},d_{k})\backslash(c_{k},d_{k}-\delta_{k}])+\sum_{k=N+1}^{\infty}\mu_{g}((c_{k},d_{k}))\right.$$<\frac\varepsilon4+\frac\varepsilon4=\frac\varepsilon2$，$\mu_g(V\setminus E)\leq\mu_g(U\setminus E)<\frac\varepsilon2$，则$\mu_g(E\triangle V)<\varepsilon$
+
+
+### 11
+设存在 Lebesgue 可测集$H_{1},H_{2}$使得$E_1\subseteq H_1,E_2\subseteq H_2\text{,且}H_1\cap H_2=\varnothing$时，
+$\text{任意 }\varepsilon>0\text{，存在开集 }G\supseteq E_1\sqcup E_2$，$G\cap H_1\supseteq E_1\text{ 且 }G\cap H_2\supseteq E_2$，$(G\cap H_1)\cap(G\cap H_2)=\varnothing$则$m^*(E_1)+m^*(E_2)\le$$m(G\cap(H_1\sqcup H_2))\leq m(G)<m^*(E_1\sqcup E_2)+\varepsilon$
+$\varepsilon\to0\text{,得 }m^*(E_1)+m^*(E_2)\leq m^*(E_1\sqcup E_2)$且外测度次可加，则取等
+$m^*(E_1\sqcup E_2)=m^*(E_1)+m^*(E_2)\text{,}E_1\cap E_2=\varnothing$时，取$G_{\delta}$型等测包$H_i\supseteq E_i$，
+$m^*(E_1)+m^*(E_2)$$\leq m(H_1\cup H_2)$$=m(H_1)+m(H_2)-m(H_1\cap H_2)$=$m^*(E_1)+m^*(E_2)-m(H_{1}\cap H_{2})$
+则$m(H_{1}\cap H_{2})$=0，取$\tilde{H}_1=H_1\setminus (H_{1}\cap H_{2}),\quad\tilde{H}_2=H_2$
+### 12
+任意闭集$F\subseteq E\text{,令}G=[0，1]\setminus F$，$[0,1]\setminus E\subseteq[0,1]\setminus F=G$
+$m^*([0,1]\setminus E)\leq m^*(G)$，$m(F)\leq m([0,1])-m^*([0,1]\setminus E)=m_*(E)$，$\sup\{m(F)\}\leq m_*(E)$
+
+任意$\varepsilon$,存在开集$U\supseteq[0,1]\setminus E$，$m(U)<m^*([0,1]\setminus E)+\varepsilon$，$F=[0,1]\setminus U\:.$则$\sup\{m(F)\}\geq m_*(E)$
+b）
+E Lebesgue可测时，由正则性，$\forall \varepsilon >0,\exists F\subset E\subset U,$$m(U)-\varepsilon<m(E)<m(F)+\varepsilon$,(1)，得证
+$m^{*}(E)=m_{*}(E).$时，对(1)取$\varepsilon=\frac{1}{n}$得到一列$F_n\subset E\subset U_{n},$,$F=\bigcup F_n\subset$$E\subset$$U=\bigcap U_n$,$m^*(E\setminus F)=0$,$m(U)=m(F)$，$E=F\cup(E\setminus F)$可测
+### 13
+$E\cap F =G -B$,G可测，B零测
+$m^{*}(E\cap F)= m^{*}( G)$
+$(E\cup F)\setminus G=E\setminus G)\cup (F\setminus G)$
+$m^{*}(E\cup F)=m^{*}(G)+m^{*}((E\setminus G)\cup (F\setminus G))$
+左式$\le (m^{*}(G)+m^{*}(E\setminus G))+(m^{*}(G)+m^{*}(F\setminus G))$=右式
+### 14
+连续函数将紧集映为紧集，$F_{\sigma}\text{集 }E{=}\bigcup_{n=1}^\infty F_n$，则$f(E)$为$F_{\sigma}$
+b)
+$E{\subset}\bigcup_{n=1}^\infty I_n,\sum_{n=1}^\infty m(I_n){<}\varepsilon$
+$|f(\beta)-f(\alpha)|\leq c|\beta-\alpha|=c\cdot m([\alpha,\beta])$
+$m^*(f(E)){\leq}\sum_{n=1}^\infty m^*(f(I_n)){\leq} c\varepsilon$
+
+c)
+存在$F_{\sigma}$型集 A  和零测集 N， $E{=}A{\cup}N{,}A{\cap}N{=}\varnothing$，$f(E){=}f(A{\cup}N){=}f(A){\cup}f(N)$，综合a，b，为可测集的并，可测
+## 2.4
+### 2.4.1(ii)
+$m^*(E)=\inf\left\{\sum_{k=1}^\infty\operatorname{m}(I_k)\right|E\subseteq\bigcup_{k=1}^\infty I_k,I_{k}为区间\}$
+$\sum_{k=1}^\infty\mathrm{m}(\tau(I_k))=\sum_{k=1}^\infty\mathrm{m}(I_k)$，为一一对应
+$m^*(\tau(E))=m^*(E)$，
+$\forall A\subset \mathbb{R}$，$m^*(\tau(A))=m^*(A)$，$\tau$为$\mathbb{R}$的双射,
+$m^*(A)=m^*(A\cap E)+m^*(A\cap E^c)$$\Leftrightarrow$$\forall \tau(A)\subset \mathbb{R,}$$m^*(\tau(A))=m^*(A\cap E)+m^*(A\cap E^c)$=$m^{*}(\tau(A\cap E))+m^{*}(\tau(A\cap E^{c}))$=$m^*(A)=m^*(\tau(A)\cap\tau(E))+m^*(\tau(A)\cap\tau(E)^c)$
+### 4
+开区间时$m\left((E+x)\cap E\right)=\begin{cases}b-(a+x)=(b-a)-x,&0<x<b-a\\0,&x\geq b-a\end{cases}$，$\operatorname*{lim}_{x\to+\infty}m((E+x)\cap E)=0.$
+开集时$E=\bigcup_{n=1}^\infty I_n,\quad I_n=(a_n,b_n),\quad I_i\cap I_j=\emptyset\left(i\neq j\right)$
+$\forall \varepsilon,\exists N,m\left( \sum_{n\ge N} E\right)<\varepsilon$
+$G_N=\bigcup_{n=1}^N(a_n,b_n)$
+$m((E+x)\cap E)\le$$m((G_N+x)\cap G_N)+3\varepsilon$
+$x\to +\infty$,$m((E+x)\cap E)\to 0$
+Lebesgue可测集时由外正则性,存在开集G，$E\subset G,$$m(G\setminus E)<\varepsilon$
+$m((E+x)\cap E)\le m((G+x)\cap G)\to 0$
+### 2.
+
+
+$\mathcal{A}=\{(a,b]:-\infty\leq a<b\leq+\infty\}$为半环，$\mu_0((a,b])=g(b)-g(a)$
+则$\mu_0(\emptyset)=0$，$\mu_{0}$跟随g单调增，对$(a,b]=\bigsqcup_{n=1}^\infty(a_n,b_n]$，$\bigsqcup_{n=1}^N(a_n,b_n]\subset(a,b]$，$\sum_{n=1}^\infty\mu_0((a_n,b_n])\leq\mu_0((a,b])$
+g右连续：$g(a+\delta)<g(a)+\varepsilon$，$g(b_n+\delta_n)<g(b_n)+\varepsilon/2^n$，$[a+\delta,b]\text{受开覆盖 }\bigcup_{n=1}^\infty(a_n，b_n+\delta_n)$，$g(b)-g(a+\delta)\leq\sum_{n=1}^\infty[g(b_n+\delta_n)-g(a_n)]$
+$g(b)-g(a)\leq\sum_{n=1}^\infty[g(b_n)-g(a_n)]$
+综上$\mu_{0}$($\bigsqcup_{i=1}^n(a_i,b_i]$)=$\sum_{i=1}^n[g(b_i)-g(a_i)]=\sum_{i=1}^n\mu_0((a_i,b_i])$为$\mathcal{A}$的测度，且$\mathbb{R}$由$(n-1,n]$可数覆盖，则为σ有限测度
+ Carathéodory 扩张定理： 可唯一扩张为$\mathfrak{B}_{\mathbb{R}}$的测度
+
+b
+LS测度平移不变，g满足$g(h) - g(0) = g(a+h) - g(a)$，
+令 $f(x) = g(x) - g(0)$，为 Cauchy 方程，依次代入整数、有理数得到线性，进而取单调有理数列使得$f(r_n)\leq f(x)\leq f(s_n),$$r_n \to x$，$s_n \to x$，因此 $g(x) = tx + g(0)$
+（$\Leftarrow$）：设 $g(x) = tx + c$（$t \geq 0$）。则：
+$\mu_g((a,b]) = t(b-a) = t \cdot m((a,b])$
+由测度唯一性，$\mu_g = t \cdot m$。而 $m$ 平移不变，故 $\mu_g$ 平移不变。
+c
+定义：$g_*\mu_g(E) = \mu_g(g^{-1}(E))$。g为单调递增右连续满射，则双射
+$g_*\mu_g((\alpha, \beta]) = \mu_g((g^{-1}(\alpha), g^{-1}(\beta)]) = g(g^{-1}(\beta)) - g(g^{-1}(\alpha)) = \beta - \alpha = m((\alpha, \beta])$
+由于区间 $(\alpha, \beta]$ 生成 $\mathfrak{B}_{\mathbb{R}}$，由测度唯一性：
+$:g_{*}\mu_{g}(E)=m(E)\forall E\in\mathfrak{B}_{\mathbb{R}}.$
+### 3.
+$\text{3.对直线上Lebesgue 可测集}E\text{与实数}\alpha，\text{及}\varepsilon>0，\text{ 若对于任意}t:|t|\leqslant\varepsilon\text{有}\alpha-t，\alpha+t\text{中}\\\text{至少一个属于}E.\text{ 证明: }m(E)\geqslant\varepsilon.$
+
+取 $E$ 关于点 $\alpha$ 的对称集为 $E^* = \{2\alpha - x \mid x \in E\}$。
+
+对于区间 $I=[\alpha-\varepsilon,\alpha+\varepsilon]$ 中的任意一点  $x = \alpha + t$（此时 $|t| \leqslant \varepsilon$）。
+若 $\alpha - t \in E$， $\alpha - t = 2\alpha - x \in E$。根据 $E^*$ 的定义，这说明 $x \in E^*$。
+
+则对于任意 $x \in I$，必有 $x \in E$ 或 $x \in E^*$。
+$$I \subseteq E \cup E^*$$
+由定理2.4.1，$E \cup E^*$ 是可测集，$m(E^*) = m(E)$。则
+$$2\varepsilon \leqslant m(E \cup E^*) \leqslant m(E) + m(E^*) = m(E) + m(E) = 2m(E)$$
+
+$$m(E) \geqslant \varepsilon$$
+
+### 5.
+测度有限，则存在开区间使得$m(E\Delta\bigsqcup_{m=1}^{n}(a_{m},b_{m}))<\varepsilon.$，$F=\bigcup_{n=1}^N(a_n,b_n)=\cup I_{n}$
+$m(\tau_\alpha(F)\triangle F)=\sum_{n=1}^Nm(\tau_\alpha(I_n)\triangle I_n)<N\varepsilon$
+对$x\in\tau_\alpha(E)\setminus E$，$x\in\tau_\alpha(F)$时
+$A\setminus C\subset(A\setminus B)\cup(B\setminus C)$,$C\setminus A\subset(C\setminus B)\cup(B\setminus A))$，则$A\triangle C\subset(A\triangle B)\cup(B\triangle C)$，$m(\tau_\alpha(E)\triangle E)\leq m(\tau_\alpha(E)\triangle\tau_\alpha(F))+m(\tau_\alpha(F)\triangle F)+$$m(F\triangle E)<\varepsilon+N\varepsilon+\varepsilon$
+则$\lim_{\alpha\to0}m(\tau_\alpha(E)\triangle E)=0$
+由Carathéodory条件，$m(\tau_\alpha(E)\cap E)=\frac{m(\tau_\alpha(E))+m(E)-m(\tau_\alpha(E)\triangle E)}2$=$=m(E)-\frac12m(\tau_\alpha(E)\triangle E)$
+$\lim_{\alpha\to0}m(\tau_\alpha(E)\cap E)$$=m(E)-0$
+
+
+b）
+利用a，若$m(E)>0$，存在$|m(\tau_\alpha(E)\cap E)-m(E)|<\varepsilon=\frac{m(E)}2$，$m(\tau_\alpha(E)\cap E)>m(E)-\frac{m(E)}2$，矛盾
+### 7
+
+由提示，存在开区间I=(a,b)，$m(E\cap I)\geqslant\frac34(b-a)$，记$E_{0}=E\cap I$
+$\delta_{0}$=$2m(E_0)-(b-a)$,任意$|h|<\delta_{0}$,对$E_0^h=E_0+h$，若$E_0\cap E_0^h=\emptyset$，则$m(E_0\cup E_0^h)=$$2m(E_0)$$\leqslant(b-a)+|h|$，矛盾,则$(-\delta_0,\delta_0)\subseteq E-E$
+
+### 9
+若存在零测Z，$m^*(f(Z))>0$，由Vitalli集，存f(Z)上不可测集A，而Z中映到A的部分$E=f^{-1}(A)\cap Z$可测，由于$A\subset f(Z)$,则$f(E)=A$，可测，矛盾
+
+## 3.1
+
+
+
+### 1b
+>设$f,g$是集$E$上的一个广义实值函数，$c$是任何实数，证明：
+>(b) $E = E(f = -\infty)\cup\bigcup_{n = 1}^{\infty}E(-n\leq f)=E(f = +\infty)\cup\bigcup_{n = 1}^{\infty}E(f < n)$：>
+
+$E \subset E(f = -\infty)\cup\bigcup_{n = 1}^{\infty}E(-n\leq f)$:
+若 $f(x) = -\infty$，则 $x \in E(f = -\infty)$，
+若 $f(x) > -\infty$，根据阿基米德性质，必然存在一个正整数 $n$，使得 $-n \leq f(x)$。此时 $x \in E(-n \leq f)$，
+反向：
+若 $x \in E(f = -\infty)$，说明 $f$ 在 $x$ 处有定义，故 $x \in E$；
+若 $x \in \bigcup_{n=1}^{\infty} E(-n \leq f)$，则存在某个 $n$ 使得 $-n \leq f(x)$，说明 $f(x)$ 是一个实数，即 $f$ 在 $x$ 处有定义，故 $x \in E$。
+综上，$\:E=E(f=-\infty)\cup\bigcup_{n=1}^{\infty}E(-n\leq f)$
+
+ 证明$E = E(f = +\infty) \cup \bigcup_{n=1}^{\infty} E(f < n)$:将上面的负号改为正号，不等号改为反向
+
+### 1e
+>(e) $E(f + g>c)\subseteq E(f>\frac{c}{2})\cup E(g>\frac{c}{2})$
+
+任取 $x \notin E\left(f > \frac{c}{2}\right) \cup E\left(g > \frac{c}{2}\right)$，由德·摩根定律知：
+$$f(x) \le \frac{c}{2} \quad \text{且} \quad g(x) \le \frac{c}{2}$$
+$$(f+g)(x) = f(x) + g(x) \le \frac{c}{2} + \frac{c}{2} = c$$
+f$=-\infty$时视为$g-\infty=-\infty<c$,
+这表明 $x \notin E(f + g > c)$，矛盾$\blacksquare$
+
+---
+### 4
+设$E$是直线中的Lebesgue可测集，$\{f_n\}$是$E$上的Lebesgue可测函数列。证明：子集$E(\lim_{n\rightarrow\infty}f_n$存在且等于$+\infty),E(\lim_{n\rightarrow\infty}f_n$存在且是有限值)都是Lebesgue可测集。
+
+如$$E(c \leqslant f)=\left\{x \in E \mid c \leqslant f(x)\right\}$$
+$$=\left\{x \in E \mid \forall m \in \mathbb{N}, \exists N \in \mathbb{N}, \text { 当 } n>N \text { 时 }, c-\frac{1}{m}<f_{n}(x)\right\}$$
+$$=\bigcap_{m=1}^{\infty} \bigcup_{N=1}^{\infty} \bigcap_{n=N+1}^{\infty}\left\{x \in E \mid c-\frac{1}{m}<f_{n}(x)\right\}$$
+Lebesgue 可测集族对可数交并运算封闭，则可测，$E(\lim_{n\to\infty}f_n=+\infty)=\bigcap_{m=1}^\infty\bigcup_{N=1}^\infty\bigcap_{n=N+1}^\infty E(f_n>m)$，得到$E(f=+\infty)$可测，同理$E(f=-\infty)$可测，
+$E(\text{有限极限存在})=\bigcup_{k=1}^\infty\bigcap_{m=1}^\infty\bigcup_{N=1}^\infty\bigcap_{n，t>N}E(|f_n-f_t|<\frac1m,\:|f_n|\leq k).$
+
+$\blacksquare$
+
+### 5 连续函数族的上确界函数 Borel 可测；Borel 可测函数族的上确界不一定 Lebesgue 可测
+连续函数的开集原像$\{x:f_j(x)>a\}$是开集，$\{x:g(x)>a\}=\bigcup_{j\in J}\{x:f_j(x)>a\}$为Borel集，g Borel可测
+ Borel 集的任意并不一定L可测：
+ 取Vitali 集A，对$j\in A$取$f_j(x)=\begin{cases}1,&x=j,\\0,&x\neq j.&\end{cases}$，$g(x)=\sup_{j\in A}f_j(x)=\begin{cases}1,&x\in A,\\0,&x\notin A.\end{cases}$，则$\{x:g(x)>0\}=A,$
+
+
+$\blacksquare$
+
+### 6
+设$E$是直线中的Lebesgue可测集。对$E\times(0,1]$上的实值函数$f$，设对固定的$y\in(0,1]$，函数$x\mapsto f(x,y)$都是$E$上的Lebesgue可测函数，对固定的$x\in E$，函数$y\mapsto f(x,y)$都是$(0,1]$上的连续函数，那么$F(x)=\varlimsup_{y\rightarrow0^{+}}f(x,y)$是$E$上的可测函数。
+
+$\overline{\lim}_{y\to0^+}f(x,y)=\lim_{n\to\infty}F_{n}(x)$，
+由连续，$F_n(x)=\sup_{0<y\leq1/n}f(x,y)$=$sup_{k\ge n}f\left( x, \frac{1}{k} \right)$
+可测函数列的上确界$F_{n}$仍是可测函数，因为$\{ x\in E\mid\underset{n\in\mathbf{N}}{\operatorname*{sup}}f_{n}(x)>c\}=\bigcup_{n=1}^{\infty}\left\{ x\in E\mid f_{n}(x)>c\right\},$
+则可测函数列$F_{n}$的极限F可测
+
+
+### 7
+设$f$是开区间$(a,b)$上的Lebesgue可测函数，且$f$几乎处处可微，那么$f'$是$(a,b)$上的Lebesgue可测函数。
+
+由3.1.17，只需讨论f可微时
+$f'(x)=\lim_{n\to+\infty}\frac{f\left(x+\frac{1}{n}\right)-f(x)}{\frac{1}{n}}$
+$\frac{f\left(x+\frac1n\right)-f\left(x\right)}{\frac1n}$为可测函数及其平移的代数算式，则可测，由3.1.15，f'可测
+ $\blacksquare$
+### 9
+设$E$是直线中的 Lebesgue 可测集,$\{f_n\}$是$E$上的Lebesgue可测函数列。如果$f_n \stackrel{a.e.}{\longrightarrow} f$，且 $f_n \stackrel{a.e.}{\longrightarrow} g$，则$f \equiv g$
+
+在不收敛集外，集$x\in E\setminus(A\cup B)$，$f_n(x)\to f(x),\quad f_n(x)\to g(x)$，
+则$C=\{x\in E:f(x)\neq g(x)\}$$\subseteq A\cup B$，$m(C)\leq m(A)+m(B)=0+0$，$f\doteq g$
+
+### 12
+设$f$是直线上实值 Lebesgue 可测函数，那么$f$的图像 $\{(x,f(x)):x \in \mathbb{R}\}$ 是平面中的 Lebesgue 可测集。
+$A_n=\bigcup_{k\in\mathbb{Z}}\left\{x:\frac k{2^n}<f(x)\leq\frac{k+1}{2^n}\right\}\times\left(\frac k{2^n},\frac{k+1}{2^n}\right]$
+f 满足L可测，则$A_{n}\:$为可测集的可数并，L可测
+图像上点对任意 n，存在 k 使得$\frac k{2^n}<f(x)\leq\frac{k+1}{2^n}$，则$(x,f(x))\in A_n$
+任意$(x,y)\in\bigcap_{n=1}^\infty A_n$，对任意 n，存在 k 使得$\frac{k_n}{2^n}<f(x),y\leq\frac{k_n+1}{2^n}，$
+$|y-f(x)|\leq\frac1{2^n}$，则$y=f(x),$
+综上$G(f)=\bigcap_{n=1}^\infty A_n$，为可数个L可测集的交集，Lebesgue可测
+
+## 3.2
+
+### 2设$E$是直线中的Lebesgue可测集，$f$是$E$上的Lebesgue可测实值函数. 证明: 存在$E$上的Lebesgue可测函数列$\{f_n\}$一致收敛于$f$，且每个$f_n$的值域是可数集.
+$f_n(x)=\frac kn,\quad x\in f^{-1}$($\left[\frac kn,\frac{k+1}n\right)$),则$\sup_{x\in E}|f_n(x)-f(x)|\leq\frac1n\to0$，且$f_{n}$值域可数
+### 3在测度空间$(\mathbb{R}, \mathcal{L}, m)$中，简单函数全体和Lebesgue可测函数的势分别是什么?
+Lebesgue可测集构成$\mathcal{L}$,零测集的子集仍然是 Lebesgue 可测的,Cantor 集势$=2^{\aleph_0}$，则$|\mathcal{L}|\ge$$2^{(2^{\aleph_0})}$
+另一方面，$\mathcal{L}$ 本身是 $\mathbb{R}$ 的幂集 $\mathcal{P}(\mathbb{R})$ 的一个子集，由Cantor-Bernstein定理，$|\mathcal{L}|=2^{(2^{\aleph_0})}$
+Cantor 集  的任意子集的指示函数都是简单函数，进而Lebesgue可测，势$\ge2^{2^{\aleph_0}}$，
+而简单函数和Lebesgue可测函数均含于$\mathbb{R}^{\mathbb{R}}$,势$\leq|\mathbb{R}^{\mathbb{R}}|=(2^{\aleph_0})^{(2^{\aleph_0})}=2^{\aleph_0\cdot2^{\aleph_0}}=2^{2^{\aleph_0}}$
+综上简单函数和Lebesgue可测函数的势为$2^{2^{\aleph_0}}$
+
+### 4设$E$是直线中的Lebesgue可测集，$f$是$E$上的Lebesgue可测函数. 证明: 对实数$a,d$，$f(ax), f(x + a), f(x^2), f(x^3), f(\frac{1}{x})$都是Lebesgue可测函数. (规定$\frac{1}{0} = 0$)
+f可测则$A_c=\{y\in E:f(y)>c\}$可测，伸缩变换保持Lebesgue可测性，则$\{x:f(ax)>c\}=\frac1aA_c$可测，且f(0)为常值函数、可测，则f(ax)可测
+一般地，f可测，$g(x)=f(\varphi(x)),$$\varphi$可测，$x\in\varphi^{-1}(E).$，$A_a=\{y\in E:f(y)>a\}.$Lebesgue可测，$\{x:f(\varphi(x))>a\}=\{x:\varphi(x)\in A_a\}=\varphi^{-1}(A_a).$可测，则g可测
+### 6设$E$是直线中的Lebesgue可测集，$m(E) < +\infty$，$E$上的Lebesgue可测函数列$\{f_n\}$几乎处处收敛于一个实值函数$f$. 证明: 存在$E$中的单调递增的Lebesgue可测集列$\{E_m\}$，使得$\{f_n\}$在每个$E_m$上一致收敛于$f$，且
+$$m\left(E \setminus \bigcup_{n=1}^{\infty} E_n\right) = 0.$$
+由 Egorov 定理，对于每个 $k \in \mathbb{N}$，存在可测集 $A_k \subset E$ 使得$m(E \setminus A_k) < \frac{1}{k}$；$f_n$ 在 $A_k$ 上一致收敛于 $f$
+定义 $E_m = \bigcup_{k=1}^{m} A_k$。则：
+ $E_1 \subset E_2 \subset \cdots \subset E$；每个 $A_k$ 可测，故 $E_m$ 可测。
+
+对于固定的 $m$，$f_n$ 在每个 $A_k$（$k \leq m$）上一致收敛于 $f$。对于任意 $\epsilon > 0$，存在 $N_k$ 使得 $n \geq N_k$ 时 $\sup_{x \in A_k} |f_n(x) - f(x)| < \epsilon$。取 $N = \max\{N_1, \ldots, N_m\}$，则 $n \geq N$ 时
+$$\sup_{x \in E_m} |f_n(x) - f(x)| = \max_{k \leq m} \sup_{x \in A_k} |f_n(x) - f(x)| < \epsilon$$
+因此，$f_n$ 在 $E_m$ 上一致收敛于 $f$。
+
+余集测度趋于零：$E \setminus E_m = E \setminus \bigcup_{k=1}^{m} A_k = \bigcap_{k=1}^{m} (E \setminus A_k) \subset E \setminus A_m$，故
+$$m(E \setminus E_m) \leq m(E \setminus A_m) < \frac{1}{m} \to 0 \quad \text{当 } m \to \infty$$
+
+
+### 7设$E$是直线中的Lebesgue可测集，$m(E) < +\infty$，$\{f_{nm} : n, m \in \mathbb{N}\}$是$E$上的Lebesgue可测函数族. 假设存在实值函数$\{g_m\}$和$h$，与它们的极限几乎处处相等：
+$\lim_{n\to\infty}f_{nm}\underset {m}{\doteq }g_{m};\operatorname*{lim}_{m\to\infty}g_{m}\underset {m}{\doteq } h.$
+证明: 可取$n_1 < n_2 < \cdots < n_k < \cdots, m_1 < m_2 < \cdots < m_k < \cdots$使得子列$\{f_{n_k m_k}\}$几乎处处收敛于$h$. 当$m(E) = +\infty$时，情况如何呢?
+设
+$E_0=\{x:\ f_{nm}(x)\to g_m(x),\ g_m(x)\to h(x)\}$则$m(E\setminus E_0)=0$。
+#### 第一步（有限测度情形）
+设$F\subset E_0$，且$m(F)<\infty$。
+由Egorov定理：
+对每个$k$，存在$F_k^{(1)}\subset F$，满足
+$m(F\setminus F_k^{(1)})<2^{-k},$
+且在$F_k^{(1)}$上
+$$
+|g_m-h|<\frac{1}{2k},\quad m\ge M_k.
+$$
+对每个固定$m$，再用Egorov定理：
+存在$F_{k,m}^{(2)}\subset F_k^{(1)}$，使$m(F_k^{(1)}\setminus F_{k,m}^{(2)})<2^{-k-m},$
+且在$F_{k,m}^{(2)}$上
+$$
+|f_{nm}-g_m|<\frac{1}{2k},\quad n\ge N_{k,m}.
+$$
+令$F_k=\bigcap_{m\ge M_k} F_{k,m}^{(2)}$
+则
+$$
+m(F\setminus F_k)<2^{-k+1}.
+$$
+取$m_k\ge M_k,\ n_k\ge N_{k,m_k},$则在$F_k$上
+$$
+|f_{n_k m_k}-h|
+\le |f_{n_k m_k}-g_{m_k}|+|g_{m_k}-h|
+<\frac{1}{k}.
+$$
+因此在
+$F_\infty=\bigcap_{k=1}^\infty F_k$上（且$m(F\setminus F_\infty)=0$）有
+$$
+f_{n_k m_k}\to h.
+$$
+#### $m(E)=+\infty$时
+直线上的 Lebesgue 测度是 $\sigma$-有限的，切成无数个“有限测度的披萨切片”
+$$
+E_j=E_0\cap[-j,j],\quad m(E_j)<\infty,\quad E_0=\bigcup_{j=1}^\infty E_j.
+$$
+对每个$E_j$，由第一步可取子列$\{f_{n_k^{(j)} m_k^{(j)}}\}$，在$E_j$上几乎处处收敛于$h$。
+取这些子列的对角线：
+$$
+n_k=n_k^{(k)},\quad m_k=m_k^{(k)}.
+$$
+则对任意$x\in E_0$，存在$j$使$x\in E_j$，从而
+$$
+f_{n_k m_k}(x)\to h(x)\quad (k\to\infty).
+$$
+故在$E$上几乎处处成立。
+
+###  13设$f$是$[0, 2\pi]$上的实值函数，则下面等价:(a) $f$是$[0, 2\pi]$上的Lebesgue可测函数;(b) 存在连续函数列$\{f_n\}$，在$[0, 2\pi]$上$f_n \stackrel{a.e.}{\longrightarrow} f$;(c) 存在多项式序列$\{p_n\}$，在$[0, 2\pi]$上$p_n \stackrel{a.e.}{\longrightarrow} f$;(d) 存在三角多项式序列$\{T_n\}$，在$[0, 2\pi]$上$T_n(x) \stackrel{a.e.}{\longrightarrow} f(x)$.
+设 $f$ 在 $X$ 可测。Lusin每次去掉越来越小的零测集 $\varepsilon_n=\dfrac1n$，存在闭集 $F_n\subset X$：
+$$m(X\setminus F_n)<\frac1n,\quad f|_{F_n}\text{ 连续}.$$
+Tietze扩张，$\exists f_n\in C(X)$，满足 $f_n|_{F_n}=f|_{F_n}$。
+
+令 $A_n=X\setminus F_n$，$E=\varlimsup\limits_{n\to\infty}A_n$，则
+$$m(E)\le \limsup_{n\to\infty}m(A_n)\le \lim_{n\to\infty}\frac1n=0.$$
+
+$\forall x\notin E$，当 $n$ 充分大时有 $x\in F_n$，故 $f_n(x)=f(x)$，即
+$f_n\to f\ \text{a.e.}$。
+
+####  2. $(b)\Rightarrow(c)$ 连续列a.e.收敛 $\implies$ 多项式列a.e.收敛
+设 $\{f_n\}\subset C(X)$，存在零测集 $B$，使 $x\notin B$ 时 $f_n(x)\to f(x)$。
+对每个 $f_n$，由Weierstrass第一定理，存在多项式 $p_n$ 满足：
+$$\sup_{X}|p_n(x)-f_n(x)|<\frac1n.$$
+
+$\forall x\notin B$：
+$$|p_n(x)-f(x)|\le |p_n-f_n|+|f_n-f|<\frac1n+|f_n(x)-f(x)|\to 0,$$
+故 $p_n\to f\ \text{a.e.}$。
+####   $(c)\Rightarrow(d)$ 
+设多项式列 $p_n\to f\ \text{a.e.}$，例外零测集仍为 $B$。
+边界点不影响，将 $p_n\in C(X)$ 做周期连续延拓为 $\mathbb R$ 上 $2\pi$ 周期连续函数 $\tilde p_n$。
+由Weierstrass第二定理，存在三角多项式 $T_n$，使得
+$$\sup_{\mathbb R}|T_n(x)-\tilde p_n(x)|<\frac1n,$$
+限制到 $X$ 有 $\sup\limits_X|T_n-p_n|<\dfrac1n$。
+
+同前：$\forall x\notin B$，
+$$|T_n(x)-f(x)|\le |T_n-p_n|+|p_n-f|\to 0,$$
+得 $T_n\to f\ \text{a.e.}$。
+####  $(d)\Rightarrow(a)$ 三角多项式列a.e.收敛 $\implies f$ 可测
+每个三角多项式 $T_n$ 连续，从而Lebesgue可测；
+可测函数列几乎处处极限仍Lebesgue可测，故 $f$ 可测。
+
+[[4-30.074]]
